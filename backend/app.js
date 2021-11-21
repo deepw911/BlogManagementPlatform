@@ -8,7 +8,7 @@ app.use(express.json({
 }));
 app.use(cors());
 require('dotenv').config();
-ObjectId = require('mongodb').ObjectID;
+// ObjectId = require('mongodb').ObjectID;
 
 const Blog = require('./blogModel.js')
 
@@ -54,14 +54,11 @@ app.post('/api/saveBlog',(req, res) => {
 })
 
 app.post('/api/deleteBlog/:id', (req,res) => {
-  // 618c16408b5901ccfe6688a
   Blog.findByIdAndDelete(req.params.id, (err, data) => {
     if (err) {
       console.log(err);
       res.send(err)
     } else {
-      //data.delete();
-      //res.send({"message":"sumcessfuml"})
       res.send(data)
     }
   })

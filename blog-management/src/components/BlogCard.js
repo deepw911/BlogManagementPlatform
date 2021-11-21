@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-function BlogCard(props){
+function BlogCard(props) {
 
-    const {_id,title,content}=props.blog;
+    const { _id, title, content } = props.blog;
 
-    return(
+    return (
         <div className="post">
-            <Link to={{pathname:`blog/${_id}`}}>
+            <Link to={{ pathname: `blog/${_id}` }} className="link">
                 <div className="blogDisplay">
                     <div className="postInfo">
                         <span className="postTitle">{title}</span>

@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-padding: 80px 60px;
+padding: 48px 60px;
 background: #22577A;
 bottom: 0;
 width: 92%;
 clear: both;
 position: relative;
-margin-top:500px;
-
+margin-top:200px;
+height:1px;
+font-family: "Montserrat",sans-serif;
 
 @media (max-width: 1000px) {
 	padding: 70px 30px;
@@ -16,25 +17,21 @@ margin-top:500px;
 `;
 
 export const Container = styled.div`
+   
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	max-width: 1000px;
 	margin: 0 auto;
 	margin-right:100px;
+	margin-bottom:0px;
 `
-
-export const Column = styled.div`
-display: flex;
-flex-direction: column;
-text-align: left;
-margin-left: 60px;
-`;
 
 export const Row = styled.div`
 display: grid;
-grid-template-columns: repeat(auto-fill,minmax(185px, 1fr));
-grid-gap: 20px;
+grid-template-columns: repeat(auto-fill,minmax(180px, 1fr));
+grid-gap: 8px;
+margin-left:30px;
 
 @media (max-width: 1000px) {
 	grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
@@ -43,9 +40,10 @@ grid-gap: 20px;
 
 export const FooterLink = styled.a`
 color: #fff;
-margin-bottom: 20px;
+margin-bottom: 10px;
 font-size: 18px;
 text-decoration: none;
+font-family: "Montserrat",sans-serif;
 
 &:hover {
 	color: #0A1931;
@@ -56,6 +54,8 @@ text-decoration: none;
 export const Heading = styled.p`
 font-size: 24px;
 color: #fff;
-margin-bottom: 40px;
 font-weight: bold;
+font-family: "Montserrat",sans-serif;
+ margin-top:-5px;
+
 `;

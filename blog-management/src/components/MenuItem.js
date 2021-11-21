@@ -5,18 +5,13 @@ export const MenuItems=[
         cName:'nav-links'
     },
     {
-        title:'ABOUT',
-        url:'#',
-        cName:'nav-links'
-    },
-    {
         title:'BLOGS',
-        url:'#',
+        url:'/',
         cName:'nav-links'
     },
     {
         title:'CONTACT US',
-        url:'#',
+        url:'mailto:user123@blogit.com',
         cName:'nav-links'
     },
     
